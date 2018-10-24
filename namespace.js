@@ -18,18 +18,18 @@ var LIU00452 = {
     div.addEventListener("mouseover", LIU00452.mouseOver);
     div.addEventListener("mouseout", LIU00452.mouseOut);  
 },
-    Click : function Click() {
+    Click : function() {
     this.style.borderColor = "pink";
     this.style.backgroundColor = "gray";
     console.log(this);
 },
 
-    mouseOver : function mouseOver() {
+    mouseOver : function() {
     this.classList.toggle("highlight");
     console.log(this);
 },
 
-     mouseOut : function mouseOut() {
+     mouseOut : function () {
   this.classList.toggle("highligght");
   this.removeAttribute('style'); 
   console.log(this);
