@@ -14,9 +14,9 @@ var LIU00452 = {
     boxes.appendChild(div);
    
 
-    div.addEventListener("click", Click);
-    div.addEventListener("mouseover", mouseOver);
-    div.addEventListener("mouseout", mouseOut);  
+    div.addEventListener("click", LIU00452.Click);
+    div.addEventListener("mouseover", LIU00452.mouseOver);
+    div.addEventListener("mouseout", LIU00452.mouseOut);  
 },
     Click : function Click() {
     this.style.borderColor = "pink";
