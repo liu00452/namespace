@@ -25,12 +25,12 @@ function Click(){
         console.log(this);
          }
         
-function mouseOver(){
+function mouseOver(e){
         e.target.classList.toggle("highlight");
         console.log(e);
     }
 
- function  mouseOut(){
+ function  mouseOut(e){
         e.target.classList.toggle("highlight");
         e.target.removeAttribute('style');
         console.log(e);
