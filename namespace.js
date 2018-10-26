@@ -14,24 +14,27 @@ var LIU00452 = {
         boxes.appendChild(div);
 
 
-        div.addEventListener("click", LIU00452.Click);
-        div.addEventListener("mouseover", LIU00452.mouseOver);
-        div.addEventListener("mouseout", LIU00452.mouseOut);
-    },
-    Click: function () {
+        div.addEventListener("click", Click);
+        div.addEventListener("mouseover", mouseOver);
+        div.addEventListener("mouseout", mouseOut);
+   
+    
+function Click(){
         this.style.borderColor = "pink";
         this.style.backgroundColor = "gray";
         console.log(this);
-    },
-
-    mouseOver: function (e) {
+         }
+        
+function mouseOver(){
         e.target.classList.toggle("highlight");
         console.log(e);
     },
 
-    mouseOut: function (e) {
-        e.target.classList.toggle("highligght");
+ function  mouseOut(){
+        e.target.classList.toggle("highlight");
         e.target.removeAttribute('style');
         console.log(e);
     }
 };
+
+    
