@@ -28,13 +28,13 @@ function Click(){
 function mouseOver(){
         e.target.classList.toggle("highlight");
         console.log(e);
-    },
+    }
 
  function  mouseOut(){
         e.target.classList.toggle("highlight");
         e.target.removeAttribute('style');
         console.log(e);
-    }
+    }}
 };
 
     
